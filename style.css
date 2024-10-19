@@ -1,0 +1,131 @@
+/* Fondo desenfocado */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px) brightness(50%); /* Combina los filtros en una sola propiedad */
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.article {
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 23rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgb(77, 77, 77);
+    filter: brightness(95%);
+}
+
+/* El resto de los estilos (título, span, etc.) */
+.title {
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(36, 36, 36);
+    margin-top: 2.9rem;
+    text-align: center;
+    letter-spacing: 0.9rem;
+}
+
+.span {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(56, 56, 56);
+    letter-spacing: 0.3rem;
+}
+
+.slogan {
+    display: inline-block;
+    text-align: center;
+    margin-top: 70px;
+    color: rgb(170, 170, 170);
+    font-style: italic;
+    padding: 0 10px;
+}
+
+.description {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1rem;
+    padding: 0 30px;
+    color: rgb(56, 56, 56);
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.contain-anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor {
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 40px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    color: rgb(117, 117, 117);
+    border: 1px solid rgb(129, 129, 129);
+    padding: 6px 12px;
+}
+
+.anchor:hover {
+    color: rgb(36, 36, 36);
+    transition: all ease;
+    color: rgb(131, 131, 131);
+}
+
+.social {
+    position: relative;
+    bottom: 0;
+    height: 100%;
+}
+
+.position {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: rgb(126, 126, 126);
+}
+
+.icon:hover {
+    fill: rgb(207, 207, 207);
+    transition: all ease;
+    transition-duration: .5s;
+}
+
