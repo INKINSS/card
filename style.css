@@ -61,7 +61,7 @@ body {
 .slogan {
     display: inline-block;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 30%;
     color: rgb(170, 170, 170);
     font-style: italic;
     padding: 0 10px;
@@ -129,3 +129,10 @@ body {
     transition-duration: .5s;
 }
 
+@media screen and (max-width: 768px) {
+    .article {
+        max-width: 19rem;
+        height: 80vh;
+    }
+    
+}
