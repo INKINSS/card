@@ -30,7 +30,7 @@ body {
     background-image: url('./assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 23rem;
+    max-width: 21rem;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ body {
     font-size: 2.5rem;
     font-weight: 600;
     color: rgb(36, 36, 36);
-    margin-top: 2.9rem;
+    margin-top: 3.1rem;
     text-align: center;
     letter-spacing: 0.9rem;
 }
@@ -61,10 +61,10 @@ body {
 .slogan {
     display: inline-block;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 20%;
     color: rgb(170, 170, 170);
     font-style: italic;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .description {
@@ -109,12 +109,11 @@ body {
 }
 
 .position {
-    position: absolute;
     bottom: 40px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 0 50px;
+    margin-top: 50px;
 }
 
 .icon {
@@ -129,10 +128,33 @@ body {
     transition-duration: .5s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 400px) {
     .article {
-        max-width: 19rem;
+        max-width: 17rem;
         height: 80vh;
     }
-    
+}
+
+@media screen and (min-width: 768px) {
+    .article {
+        max-width: 27rem;
+        height: 80vh;
+    }
+
+    .slogan {
+        margin-top: 3rem;
+        font-size: 1.3rem;
+    }
+
+    .position {
+        position: absolute;
+        width: 70%;
+        bottom: 8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+   .slogan {
+    margin-top: 1.5em;
+   }
 }
